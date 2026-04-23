@@ -16,7 +16,7 @@ body {
 
 /* Title */
 h1 {
-  color: #111; /* Dark color */
+  color: #111;
   margin-bottom: 20px;
   letter-spacing: 1px;
 }
@@ -28,15 +28,15 @@ h1 {
 }
 
 /* Input box */
-input {
+input[type="text"] {
   flex: 1;
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
 
-/* Buttons */
-button {
+/* Add button */
+.input-section button {
   padding: 8px 12px;
   cursor: pointer;
   border: none;
@@ -46,17 +46,26 @@ button {
   transition: 0.2s;
 }
 
-button:hover {
+.input-section button:hover {
   background-color: #45a049;
 }
 
-/* Task list */
+/* Task row */
 .task {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 12px;
-  padding: 5px;
+  padding: 6px;
+  gap: 10px;
+}
+
+/* Checkbox (bigger + clickable) */
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  transform: scale(1.2);
 }
 
 /* Task text */
@@ -70,4 +79,20 @@ button:hover {
 .completed {
   text-decoration: line-through;
   color: gray;
+}
+
+/* Delete button */
+.task button {
+  font-size: 16px;
+  padding: 6px 10px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.task button:hover {
+  background-color: #e60000;
 }
