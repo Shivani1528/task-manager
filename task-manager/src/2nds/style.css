@@ -1,0 +1,193 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* BODY */
+body {
+  background: #0F172A;
+  color: white;
+  line-height: 1.6;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* logo left, menu right */
+  align-items: center;
+  padding: 20px 60px;
+}
+
+/* LOGO */
+.logo {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* NAV LINKS CONTAINER */
+.nav-links {
+  display: flex;
+  gap: 30px; /* spacing between Home, Features, Contact */
+}
+
+/* NAV LINKS */
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+/* HOVER EFFECT */
+.nav-links a:hover {
+  color: #8B5CF6;
+}
+
+/* ================= HERO SECTION ================= */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 60px;
+  min-height: 80vh;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  margin-bottom: 25px;
+  color: #CBD5E1;
+}
+
+/* BUTTONS */
+.buttons button {
+  padding: 12px 24px;
+  margin-right: 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* PRIMARY BUTTON */
+.primary {
+  background: linear-gradient(45deg, #8B5CF6, #6366F1);
+  color: white;
+}
+
+/* SECONDARY BUTTON */
+.secondary {
+  background: transparent;
+  border: 1px solid #CBD5E1;
+  color: #CBD5E1;
+}
+
+.secondary:hover {
+  background: #1E293B;
+}
+
+/* MOCKUP BOX */
+.mockup {
+  width: 300px;
+  height: 180px;
+  border: 2px dashed #CBD5E1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #CBD5E1;
+}
+
+/* ================= FEATURES ================= */
+.features {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.features h2 {
+  font-size: 28px;
+}
+
+.features p {
+  color: #CBD5E1;
+  margin-top: 5px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  gap: 25px;
+}
+
+/* CARD */
+.card {
+  background: #1E293B;
+  padding: 25px;
+  border-radius: 12px;
+  width: 220px;
+  transition: 0.3s;
+}
+
+/* CARD HOVER */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+/* ================= CTA ================= */
+.cta {
+  text-align: center;
+  padding: 80px 20px;
+  background: #020617;
+}
+
+.cta h2 {
+  margin-bottom: 10px;
+}
+
+.cta p {
+  color: #CBD5E1;
+}
+
+.cta button {
+  margin-top: 15px;
+}
+
+/* CONTACT INFO */
+.contact {
+  margin-top: 25px;
+  color: #CBD5E1;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image {
+    margin-top: 30px;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
